@@ -1,9 +1,14 @@
 li strong {
-    background-color: darkgreen;
+    background-color: maroon;
     color: whitesmoke;
 }
 
 li a {
-    background-color: greenyellow;
+    background-color: red;
     color: rgb(0.02, 0.04, 0.01);
+}
+
+.navbutt {
+    display: flex; flex-direction: row;
+    background-color: red;
 }
