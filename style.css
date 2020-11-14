@@ -1,19 +1,19 @@
 li strong {
-    background-color: maroon;
-    color: whitesmoke;
+    background-color: maroon; color: whitesmoke;
 }
 
 li a {
-    background-color: red;
-    color: rgb(0.02, 0.04, 0.01);
+    background-color: red; color: rgb(0.02, 0.04, 0.01);
 }
 
-.navbutt, .navbar {
+.navbar {
     display: flex; flex-direction: row;
     background-color: red;
 }
 
-.navbar {
+.navbutt {
+    display: flex; flex-direction: row;
+    background-color: red;
     list-style-type: none;
     float: right;
 }
