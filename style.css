@@ -1,0 +1,9 @@
+li strong {
+    background-color: darkgreen;
+    color: whitesmoke;
+}
+
+li a {
+    background-color: greenyellow;
+    color: rgb(0.02, 0.04, 0.01);
+}
