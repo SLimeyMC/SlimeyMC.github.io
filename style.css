@@ -7,6 +7,9 @@ li a {
 }
 
 .navigation-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex; flex-direction: row;
     background-color: red;
     border: maroon solid 1px;
@@ -14,10 +17,13 @@ li a {
 }
 
 .navigation-button li {
-    display: flex; flex-direction: row;
-    background-color: red;
-    list-style-type: none;
-    float: right;
+    float: left;
+    display: block;
+    background: red;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 header ul {
