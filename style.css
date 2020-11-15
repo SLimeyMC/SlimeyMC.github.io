@@ -22,13 +22,14 @@ li a {
 }
 
 .navigation-button li {
-    float: left;
-    display: block;
+    float: right;
+    display: inline-block;
     background: red;
     color: whitesmoke;
     text-align: center;
-    margin: o;
-    padding: 14px 16px;
+    margin: 0;
+    size: 12px;
+    padding: 4px;
     text-decoration: none;
 }
 
