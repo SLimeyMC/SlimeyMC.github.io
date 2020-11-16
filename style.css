@@ -1,10 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(0.09, 0.01, 0.01);
+    background: rgb(0.12, 0.03, 0.02);
 }
 
-header a strong {
+li strong {
     background-color: maroon; color: whitesmoke;
 }
 
@@ -12,7 +12,7 @@ header a {
     background-color: red; color: rgb(0.02, 0.04, 0.01);
 }
 
-.navigation-button {
+.navigation-bar {
     position: fixed;
     width: 100%;
     display: flex; flex-direction: row;
@@ -21,19 +21,28 @@ header a {
     float: left;
 }
 
-.navigation-button a {
-    float: right;
+li {
     display: inline-block;
     background: red;
     color: whitesmoke;
-    text-align: center;
     margin: 0;
     size: 12px;
     padding: 4px;
     text-decoration: none;
+    list-style-type: none;
 }
 
+li:hover{color: red; background: whitesmoke}
+
+li strong:hover{}
+
 header ul {
-    padding: 0;
+    float: right;
+    alignment: center;
+    text-align: right;
+    overflow: hidden;
+    padding-left: 77.5%;
+    padding-top: 0.5%;
     margin: 0;
+    text-decoration: none;
 }
