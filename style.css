@@ -1,11 +1,17 @@
 body {
     margin: 0;
     padding: 0;
-    background: rgb(0.12, 0.03, 0.02);
+    background: white;
 }
 
 li strong {
+    padding: 0.5em;
     background-color: maroon; color: whitesmoke;
+}
+
+header {
+    position: absolute;
+    z-index: 9;
 }
 
 header a {
@@ -25,24 +31,103 @@ li {
     display: inline-block;
     background: red;
     color: whitesmoke;
-    margin: 0;
-    size: 12px;
-    padding: 4px;
+    margin: 5px;
+    padding: 1px;
     text-decoration: none;
-    list-style-type: none;
+    transition: 0.8s;
 }
 
-li:hover{color: red; background: whitesmoke}
+li a:hover {
+    padding: 0.5em;
+    color: red;
+    background: maroon;
+    z-index: 11;
+}
 
-li strong:hover{}
+li a {
+    text-decoration: none;
+    transition: 0.4s;
+}
 
 header ul {
     float: right;
     alignment: center;
     text-align: right;
     overflow: hidden;
-    padding-left: 77.5%;
-    padding-top: 0.75%;
+    font-size: 16px;
+    padding-left: 73%;
+    padding-top: 0.5%;
     margin: 0;
     text-decoration: none;
 }
+
+.datacraft-background {
+    margin-top: -10%;
+    width: auto;
+    height: 66%;
+    transform: scale(0.8, 0.8);
+}
+
+.hue-waves {
+    animation: huewaves 4s linear infinite;
+    -webkit-filter: brightness(100%) saturate(100%);
+}
+
+@keyframes huewaves {
+    0%  {-webkit-filter: hue-rotate(0turn);}
+    100%{-webkit-filter: hue-rotate(1turn);}
+}
+
+.datacraft-button {
+    position: relative;
+    color: white;
+    background-color: black;
+    font-family: sans-serif;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 5px;
+    bottom: 50%;
+    text-decoration: none;
+}
+
+.typewriter1 {
+    color: black;
+    font-family: sans-serif;
+    overflow: hidden;
+    border-right: .15em solid black;
+    white-space: nowrap;
+    margin-top: -30%;
+    letter-spacing: .05em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 30%;
+    z-index: 5;
+    position: absolute;
+    animation:
+            typing 2.5s steps(30, end),
+            blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 36% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+.datacraft-logo {
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 40%;
+    top: 15em;
+    z-index: 6;
+}
+
+.typewrite { color:#fff; text-decoration: none;}
