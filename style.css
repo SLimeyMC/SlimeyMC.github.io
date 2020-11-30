@@ -64,6 +64,7 @@ header ul {
 header li{
     background-position: 100%;
     padding-right: 0;
+    top: 50%;
 }
 
 .datacraft-background {
